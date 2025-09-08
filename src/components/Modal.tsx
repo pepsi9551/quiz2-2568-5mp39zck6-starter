@@ -29,7 +29,17 @@ export default function AddExpenseModal({}: AddExpenseModalProps) {
   let val_number: number = Number("500.0");
   console.log(val_number + 100); // 600.0
 
-  return {
+  return (
     /* Type additional text here. */
-  };
+    <>
+      <Modal opened={true} onClose={close} withCloseButton={false}>
+        <Stack>
+          Add Expense
+          <TextInput></TextInput>
+        </Stack>
+      </Modal>
+    </>
+  
+    
+  );
 }
